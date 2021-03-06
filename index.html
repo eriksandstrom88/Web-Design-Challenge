@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Design-Challenge_index</title>
+    <!--<link rel='icon' href="OPTIONAL put some kind of icon here"/>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel='stylesheet' href='assets/style.css'/>
+</head>
+<body>
+    <!--CREATE THE NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" aria-current="page" href="#">Erik's Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plots
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="visualizations/temp.html">Lat vs Temp</a></li>
+                        <li><a class="dropdown-item" href="visualizations/wind.html">Lat vs Wind</a></li>
+                        <li><a class="dropdown-item" href="visualizations/humidity.html">Lat vs Humidity</a></li>
+                        <li><a class="dropdown-item" href="visualizations/cloudiness.html">Lat vs Cloudiness</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="visualizations/comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="visualizations/data.html">Data</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+              <!--CREATE THE HEADER-->
+    <div class="container">
+      <div class="row">
+          <h1 class=index_header>Home: Erik's Weather</h1>
+      </div>
+              <!--FILL THE BODY WITH CONTENT-->
+      <div class="row">
+          <div class="col-md-4">
+              <img class=index_image1 src='assets/lat-temp_scatter.png' width="100%">
+          </div>
+          <div class="col-md-4">
+              <div class="col-sm-12">
+                  <p> This website is the combination of two homework assignments for the Data Analytics Bootcamp through the University of Denver.  In the first asssignment, I pulled weather data from the OpenWeatherMap.com API, cleaned and organized the data using python in Jupyter Notebook, and used Pandas, Matplotlib and Numpy to run analyses and create visuals.  The second assignment is... well, you're looking at it!  I took the visuals and analysis from the first assignment and created a webiste using HTML and CSS in VS Code, making use of Bootstrap for organizing the site.
+                  <br/>
+                  <br/>
+                  I primarily analyzed various weather metrics against Latitude.  The metrics examined include max temperature, humidity, cloudiness, and wind speed.  I plotted each of these metrics against latitude in scatter plots.  On this website, you can see each plot individually with a detailed description, all four plots on one page to compare, and the data that was used for the analysis.  Enjoy!
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="row" id="row_buffer">
+                  <div class="col-sm-4">
+                      <h2 class=index_viz_header>Visualizations</h2>
+                  </div>
+              </div>
+              <div class="row" id="index_row_buffer">
+                  <div class="col-sm-4">
+                      <a href="visualizations/temp.html"><img class=index_image1 src='assets/lat-temp_scatter.png' width="100%"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a href="visualizations/wind.html"><img class=index_image1 src='assets/lat-wind_scatter.png' width = "100%"></a>
+                  </div>
+              </div>
+              <div class="row" id="index_row_buffer">
+                  <div class="col-sm-4">
+                      <a href="visualizations/cloudiness.html"><img class=index_image1 src='assets/lat-cloudiness_scatter.png' width="100%"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a href="visualizations/humidity.html"><img class=index_image1 src='assets/lat-humidity_scatter.png' width = "100%"></a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+       
+    
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
